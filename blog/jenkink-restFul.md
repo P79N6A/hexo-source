@@ -1,11 +1,11 @@
 ---
 layout: posts
 date: 2018-12-04 00:38:36
-title: Istio服务网格
-categories: Istio
+title: jenkins的restFul Api
+categories: python 
 tags: 
-- Istio
-- k8s
+- python 
+- jenkins
 comments: true
 ---
 
