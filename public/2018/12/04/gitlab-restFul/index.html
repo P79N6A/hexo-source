@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.0" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Zhangyh&apos;s Blog">
+<meta name="keywords" content="Zhangyh">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta property="og:site_name" content="怀念青春">
+<meta property="og:description" content="Zhangyh&apos;s Blog">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-11T01:06:44.189Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="categories">
+<meta name="twitter:description" content="Zhangyh&apos;s Blog">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/categories/">
+
+
+
+
+
+  <title>gitlab的restFul Api | 怀念青春</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">怀念青春</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/04/gitlab-restFul/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhangyh">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="怀念青春">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">gitlab的restFul Api</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-04T00:38:36+08:00">2018-12-04</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="gitlab官方文档"><a href="#gitlab官方文档" class="headerlink" title="gitlab官方文档"></a>gitlab官方文档</h3><pre><code>pip install python-gitlab
+
+参考：
+    https://docs.gitlab.com/ce/api/README.html</code></pre><h4 id="import"><a href="#import" class="headerlink" title="import"></a>import</h4><pre><code>import gitlab</code></pre><h4 id="config-param"><a href="#config-param" class="headerlink" title="config param"></a>config param</h4><pre><code>url = &apos;http://xxxxxxx&apos;
+token = &apos;xxxxxxxxxxxxxx&apos;</code></pre><h4 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h4><pre><code>gl = gitlab.Gitlab(url, token)</code></pre><h4 id="获取第一页project"><a href="#获取第一页project" class="headerlink" title="获取第一页project"></a>获取第一页project</h4><pre><code>projects = gl.projects.list()</code></pre><h4 id="获取所有的project"><a href="#获取所有的project" class="headerlink" title="获取所有的project"></a>获取所有的project</h4><pre><code>projects = gl.projects.list(all=True)</code></pre><h4 id="获取所有project的name-id"><a href="#获取所有project的name-id" class="headerlink" title="获取所有project的name,id"></a>获取所有project的name,id</h4><pre><code>for p in gl.projects.list(all=True, as_list=False):
+    print(p.name, p.id)</code></pre><h4 id="获取某个id的project下的某个文件的内容："><a href="#获取某个id的project下的某个文件的内容：" class="headerlink" title="获取某个id的project下的某个文件的内容："></a>获取某个id的project下的某个文件的内容：</h4><pre><code>api:
+    https://docs.gitlab.com/ce/api/repository_files.html#get-file-from-repository
+    example:
+        GET /projects/:id/repository/files/:file_path
+        curl --request GET --header &apos;PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK&apos; &apos;https://gitlab.example.com/api/v4/projects/13083/repository/files/app%2Fmodels%2Fkey%2Erb?ref=master&apos;
+
+参考：
+    https://blog.csdn.net/felix_yujing/article/details/52712925</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> gitlab</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>private_token = <span class="string">'xxx'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>host = <span class="string">'https://git.xxx.yyy.com'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>port = <span class="string">'443'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>email = <span class="string">'admin@example.com'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>branch = <span class="string">'master'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>timeout = <span class="number">60</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>project_name = <span class="string">'camera'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>file_path = <span class="string">'/execenv/execenv.yml'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>client = gitlab.Gitlab(<span class="string">'&#123;0&#125;:&#123;1&#125;'</span>.format(host, port), email, private_token, timeout)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>project_objects = client.projects.list(search = project_name)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>project_id = <span class="literal">None</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> item <span class="keyword">in</span> project_objects:</span><br><span class="line"><span class="meta">... </span>    <span class="keyword">if</span> item.name == project_name:</span><br><span class="line"><span class="meta">... </span>        project_id = item.id</span><br><span class="line"><span class="meta">... </span>    <span class="keyword">else</span>:</span><br><span class="line"><span class="meta">... </span>        <span class="keyword">continue</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>project_id</span><br><span class="line"><span class="number">64</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>url = <span class="string">'&#123;0&#125;:&#123;1&#125;/api/v4/projects/&#123;2&#125;/repository/files?private_token=&#123;3&#125;&amp;file_path=&#123;4&#125;&amp;ref=&#123;5&#125;'</span>.format(host, port, project_id, private_token, file_path, branch)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>result = requests.get(url)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>data = result.json()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>content = base64.b64decode(data[<span class="string">'content'</span>])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> content</span><br><span class="line">---</span><br><span class="line">os: linux</span><br><span class="line">version: <span class="number">1.0</span></span><br><span class="line">appService: camera</span><br><span class="line"></span><br><span class="line"><span class="keyword">exec</span>:</span><br><span class="line">  - type: java</span><br><span class="line">    version: <span class="number">1.8</span></span><br><span class="line">    verify: java -version</span><br></pre></td></tr></table></figure>
+
+<h4 id="更新某个id的project下的某个文件内容："><a href="#更新某个id的project下的某个文件内容：" class="headerlink" title="更新某个id的project下的某个文件内容："></a>更新某个id的project下的某个文件内容：</h4><pre><code>api:
+    https://docs.gitlab.com/ce/api/repository_files.html#update-existing-file-in-repository
+
+example:
+    PUT /projects/:id/repository/files/:file_path
+    curl --request PUT --header &apos;PRIVATE-TOKEN: 9koXpg98eAheJpvBs5tK&apos; --header &quot;Content-Type: application/json&quot; \
+         --data &apos;{&quot;branch&quot;: &quot;master&quot;, &quot;author_email&quot;: &quot;author@example.com&quot;, &quot;author_name&quot;: &quot;Firstname Lastname&quot;, \
+&quot;content&quot;: &quot;some content&quot;, &quot;commit_message&quot;: &quot;update file&quot;}&apos; \
+         &apos;https://gitlab.example.com/api/v4/projects/13083/repository/files/app%2Fproject%2Erb&apos;
+    response:
+        {
+            &quot;file_path&quot;: &quot;app/project.rb&quot;,
+            &quot;branch&quot;: &quot;master&quot;
+        }</code></pre><h4 id="获取第一页project的name-id"><a href="#获取第一页project的name-id" class="headerlink" title="获取第一页project的name,id"></a>获取第一页project的name,id</h4><pre><code>for p in gl.projects.list(page=1):
+    print(p.name, p.id)</code></pre><h4 id="通过指定id-获取-project-对象"><a href="#通过指定id-获取-project-对象" class="headerlink" title="通过指定id 获取 project 对象"></a>通过指定id 获取 project 对象</h4><pre><code>project = gl.projects.get(501)</code></pre><h4 id="查找项目"><a href="#查找项目" class="headerlink" title="查找项目"></a>查找项目</h4><pre><code>projects = gl.projects.list(search=&apos;keyword&apos;)</code></pre><h4 id="创建一个项目"><a href="#创建一个项目" class="headerlink" title="创建一个项目"></a>创建一个项目</h4><pre><code>project = gl.projects.create({&apos;name&apos;:&apos;project1&apos;})</code></pre><h4 id="获取公开的项目"><a href="#获取公开的项目" class="headerlink" title="获取公开的项目"></a>获取公开的项目</h4><pre><code>projects = gl.projects.list(visibility=&apos;public&apos;)  # public, internal or private</code></pre><h2 id="获取-project-对象是以下操作的基础"><a href="#获取-project-对象是以下操作的基础" class="headerlink" title="获取 project 对象是以下操作的基础"></a>获取 project 对象是以下操作的基础</h2><h4 id="通过指定project对象获取该项目的所有分支"><a href="#通过指定project对象获取该项目的所有分支" class="headerlink" title="通过指定project对象获取该项目的所有分支"></a>通过指定project对象获取该项目的所有分支</h4><pre><code>branches = project.branches.list()
+print(branches)</code></pre><h4 id="获取指定分支的属性"><a href="#获取指定分支的属性" class="headerlink" title="获取指定分支的属性"></a>获取指定分支的属性</h4><pre><code>branch = project.branches.get(&apos;master&apos;)
+print(branch)</code></pre><h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><pre><code>branch = project.branches.create({&apos;branch_name&apos;: &apos;feature1&apos;,
+                              &apos;ref&apos;: &apos;master&apos;})</code></pre><h4 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h4><pre><code>project.branches.delete(&apos;feature1&apos;)</code></pre><h4 id="获取指定项目的所有tags"><a href="#获取指定项目的所有tags" class="headerlink" title="获取指定项目的所有tags"></a>获取指定项目的所有tags</h4><pre><code>tags = project.tags.list()</code></pre><h4 id="获取某个指定tag-的信息"><a href="#获取某个指定tag-的信息" class="headerlink" title="获取某个指定tag 的信息"></a>获取某个指定tag 的信息</h4><pre><code>tags = project.tags.list(&apos;1.0&apos;)</code></pre><h4 id="创建一个tag"><a href="#创建一个tag" class="headerlink" title="创建一个tag"></a>创建一个tag</h4><pre><code>tag = project.tags.create({&apos;tag_name&apos;:&apos;1.0&apos;, &apos;ref&apos;:&apos;master&apos;})</code></pre><h4 id="设置tags-说明"><a href="#设置tags-说明" class="headerlink" title="设置tags 说明:"></a>设置tags 说明:</h4><pre><code>tag.set_release_description(&apos;awesome v1.0 release&apos;)</code></pre><h4 id="删除tags"><a href="#删除tags" class="headerlink" title="删除tags"></a>删除tags</h4><pre><code>project.tags.delete(&apos;1.0&apos;)
+or
+tag.delete()</code></pre><h4 id="获取所有commit-info"><a href="#获取所有commit-info" class="headerlink" title="获取所有commit info"></a>获取所有commit info</h4><pre><code>commits = project.commits.list()
+for c in commits:
+    print(c.author_name, c.message, c.title)</code></pre><h4 id="获取指定commit的info"><a href="#获取指定commit的info" class="headerlink" title="获取指定commit的info"></a>获取指定commit的info</h4><pre><code>commit = project.commits.get(&apos;e3d5a71b&apos;)</code></pre><h4 id="创建一个commit"><a href="#创建一个commit" class="headerlink" title="创建一个commit"></a>创建一个commit</h4><pre><code>data = {
+    &apos;branch_name&apos;: &apos;master&apos;,  # v3
+    &apos;commit_message&apos;: &apos;blah blah blah&apos;,
+    &apos;actions&apos;: [
+        {
+            &apos;action&apos;: &apos;create&apos;,
+            &apos;file_path&apos;: &apos;blah&apos;,
+            &apos;content&apos;: &apos;blah&apos;
+        }
+    ]
+}
+commit = project.commits.create(data)</code></pre><h4 id="Compare-two-branches-tags-or-commits"><a href="#Compare-two-branches-tags-or-commits" class="headerlink" title="Compare two branches, tags or commits:"></a>Compare two branches, tags or commits:</h4><pre><code>result = project.repository_compare(&apos;develop&apos;, &apos;feature-20180104&apos;)
+print(result)</code></pre><h4 id="get-the-commits"><a href="#get-the-commits" class="headerlink" title="get the commits"></a>get the commits</h4><pre><code>for commit in result[&apos;commits&apos;]:
+    print(commit)</code></pre><h4 id="get-the-diffs"><a href="#get-the-diffs" class="headerlink" title="get the diffs"></a>get the diffs</h4><pre><code>for file_diff in result[&apos;diffs&apos;]:
+    print(file_diff)</code></pre><h4 id="get-the-commits-1"><a href="#get-the-commits-1" class="headerlink" title="get the commits"></a>get the commits</h4><pre><code>for commit in result[&apos;commits&apos;]:
+    print(commit)</code></pre><h4 id="get-the-diffs-1"><a href="#get-the-diffs-1" class="headerlink" title="get the diffs"></a>get the diffs</h4><pre><code>for file_diff in result[&apos;diffs&apos;]:
+    print(file_diff)</code></pre><h2 id="groups-project-members’s-api"><a href="#groups-project-members’s-api" class="headerlink" title="groups/project members’s api"></a>groups/project members’s api</h2><pre><code>参考：
+    https://docs.gitlab.com/ce/api/members.html</code></pre><p><del>待续</del></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/gitlab/" rel="tag"># gitlab</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/30/install-gitblog/" rel="next" title="树莓派3b+_gitblog">
+                <i class="fa fa-chevron-left"></i> 树莓派3b+_gitblog
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/04/jenkink-restFul/" rel="prev" title="jenkins的restFul Api">
+                jenkins的restFul Api <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Zhangyh</p>
+              <p class="site-description motion-element" itemprop="description">Zhangyh's Blog</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#gitlab官方文档"><span class="nav-number">1.</span> <span class="nav-text">gitlab官方文档</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#import"><span class="nav-number">1.1.</span> <span class="nav-text">import</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#config-param"><span class="nav-number">1.2.</span> <span class="nav-text">config param</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#登录"><span class="nav-number">1.3.</span> <span class="nav-text">登录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取第一页project"><span class="nav-number">1.4.</span> <span class="nav-text">获取第一页project</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取所有的project"><span class="nav-number">1.5.</span> <span class="nav-text">获取所有的project</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取所有project的name-id"><span class="nav-number">1.6.</span> <span class="nav-text">获取所有project的name,id</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取某个id的project下的某个文件的内容："><span class="nav-number">1.7.</span> <span class="nav-text">获取某个id的project下的某个文件的内容：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新某个id的project下的某个文件内容："><span class="nav-number">1.8.</span> <span class="nav-text">更新某个id的project下的某个文件内容：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取第一页project的name-id"><span class="nav-number">1.9.</span> <span class="nav-text">获取第一页project的name,id</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通过指定id-获取-project-对象"><span class="nav-number">1.10.</span> <span class="nav-text">通过指定id 获取 project 对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查找项目"><span class="nav-number">1.11.</span> <span class="nav-text">查找项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建一个项目"><span class="nav-number">1.12.</span> <span class="nav-text">创建一个项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取公开的项目"><span class="nav-number">1.13.</span> <span class="nav-text">获取公开的项目</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#获取-project-对象是以下操作的基础"><span class="nav-number"></span> <span class="nav-text">获取 project 对象是以下操作的基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#通过指定project对象获取该项目的所有分支"><span class="nav-number">0.1.</span> <span class="nav-text">通过指定project对象获取该项目的所有分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取指定分支的属性"><span class="nav-number">0.2.</span> <span class="nav-text">获取指定分支的属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建分支"><span class="nav-number">0.3.</span> <span class="nav-text">创建分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除分支"><span class="nav-number">0.4.</span> <span class="nav-text">删除分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取指定项目的所有tags"><span class="nav-number">0.5.</span> <span class="nav-text">获取指定项目的所有tags</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取某个指定tag-的信息"><span class="nav-number">0.6.</span> <span class="nav-text">获取某个指定tag 的信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建一个tag"><span class="nav-number">0.7.</span> <span class="nav-text">创建一个tag</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置tags-说明"><span class="nav-number">0.8.</span> <span class="nav-text">设置tags 说明:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除tags"><span class="nav-number">0.9.</span> <span class="nav-text">删除tags</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取所有commit-info"><span class="nav-number">0.10.</span> <span class="nav-text">获取所有commit info</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取指定commit的info"><span class="nav-number">0.11.</span> <span class="nav-text">获取指定commit的info</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建一个commit"><span class="nav-number">0.12.</span> <span class="nav-text">创建一个commit</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Compare-two-branches-tags-or-commits"><span class="nav-number">0.13.</span> <span class="nav-text">Compare two branches, tags or commits:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#get-the-commits"><span class="nav-number">0.14.</span> <span class="nav-text">get the commits</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#get-the-diffs"><span class="nav-number">0.15.</span> <span class="nav-text">get the diffs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#get-the-commits-1"><span class="nav-number">0.16.</span> <span class="nav-text">get the commits</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#get-the-diffs-1"><span class="nav-number">0.17.</span> <span class="nav-text">get the diffs</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#groups-project-members’s-api"><span class="nav-number"></span> <span class="nav-text">groups/project members’s api</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zhangyh</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

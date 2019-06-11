@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.0" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Zhangyh&apos;s Blog">
+<meta name="keywords" content="Zhangyh">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta property="og:site_name" content="怀念青春">
+<meta property="og:description" content="Zhangyh&apos;s Blog">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-11T01:06:44.189Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="categories">
+<meta name="twitter:description" content="Zhangyh&apos;s Blog">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/categories/">
+
+
+
+
+
+  <title>gitlab采坑记 | 怀念青春</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">怀念青春</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/24/gitlab-debug/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhangyh">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="怀念青春">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">gitlab采坑记</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-24T00:38:36+08:00">2018-09-24</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="rpm指定版本包下载："><a href="#rpm指定版本包下载：" class="headerlink" title="rpm指定版本包下载："></a>rpm指定版本包下载：</h1><pre><code>http://mirrors.zju.edu.cn/gitlab-ce/yum/el7/
+https://packages.gitlab.com/gitlab/gitlab-ce        //官方，比较慢</code></pre><h1 id="rpm版本包下载："><a href="#rpm版本包下载：" class="headerlink" title="rpm版本包下载："></a>rpm版本包下载：</h1><pre><code>wget http://mirrors.zju.edu.cn/gitlab-ce/yum/el7/gitlab-ce-8.17.3-ce.0.el7.x86_64.rpm
+wget http://mirrors.zju.edu.cn/gitlab-ce/yum/el7/gitlab-ce-9.5.10-ce.0.el7.x86_64.rpm
+wget http://mirrors.zju.edu.cn/gitlab-ce/yum/el7/gitlab-ce-10.8.7-ce.0.el7.x86_64.rpm
+wget http://mirrors.zju.edu.cn/gitlab-ce/yum/el7/gitlab-ce-11.3.6-ce.0.el7.x86_64.rpm    //latest</code></pre><h1 id="rpm包安装："><a href="#rpm包安装：" class="headerlink" title="rpm包安装："></a>rpm包安装：</h1><pre><code>rpm -ivh gitlab-ce-8.17.3-ce.0.el7.x86_64.rpm</code></pre><h1 id="rpm包卸载："><a href="#rpm包卸载：" class="headerlink" title="rpm包卸载："></a>rpm包卸载：</h1><pre><code>rpm -e gitlab-ce
+or
+yum erase gitlab-ce</code></pre><h1 id="gitlab重要参数："><a href="#gitlab重要参数：" class="headerlink" title="gitlab重要参数："></a>gitlab重要参数：</h1><pre><code>external_url &apos;http://10.100.102.207:8888&apos;
+gitlab_rails[&apos;backup_path&apos;] = &quot;/data1/backup/git_back/source&quot;
+git_data_dirs({&quot;default&quot; =&gt; &quot;/data1/gitlab-data&quot;})
+nginx port
+uniorn port</code></pre><h1 id="gitlab版本升级："><a href="#gitlab版本升级：" class="headerlink" title="gitlab版本升级："></a>gitlab版本升级：</h1><pre><code>wget http://mirrors.zju.edu.cn/gitlab-ce/yum/el7/gitlab-ce-11.3.6-ce.0.el7.x86_64.rpm   (latest)
+rpm -Uvh gitlab-ce-10.0.4-ce.0.el7.x86_64.rpm
+
+注意：
+     官方升级策略:
+      8.13.4 -&gt; 8.17.7 -&gt; 9.5.10 -&gt; 10.8.7 -&gt; 11.3.4
+      https://docs.gitlab.com/ee/policy/maintenance.html#upgrade-recommendations
+
+     升级后500错误 和 &quot;no implicit conversion of nil into String&quot;:
+      https://gitlab.com/gitlab-org/omnibus-gitlab/issues/3189
+
+      vim /etc/gitlab/gitlab.rb 
+          # git_data_dirs({&quot;default&quot; =&gt; &quot;/var/opt/gitlab/git-data&quot;})
+      ----&gt;
+          git_data_dir({&quot;default&quot; =&gt; { &quot;path&quot; =&gt; &quot;/var/opt/gitlab/git-data&quot; } })</code></pre><h1 id="gitlab汉化："><a href="#gitlab汉化：" class="headerlink" title="gitlab汉化："></a>gitlab汉化：</h1><pre><code>1.yum install -y git
+2.mkdir /opt/gitlab_cn
+  git clone https://gitlab.com/xhang/gitlab.git
+  or
+  git clone https://gitlab.com/xhang/gitlab.git -b v10.0.2-zh    //指定v10.2.2的版本
+3.cat gitlab/VERSION
+4.gitlab-ctl stop
+5.cd /opt/gitlab_cn
+  git diff v10.0.4 v10.0.4-zh &gt; ../10.0.4-zh.diff
+6.cd /opt/gitlab_cn
+  yum install patch -y
+  patch -d /opt/gitlab/embedded/service/gitlab-rails -p1 &lt; 10.0.4-zh.diff
+7.gitlab-ctl start
+  gitlab-ctl reconfigure</code></pre><h1 id="gitlab-启用https"><a href="#gitlab-启用https" class="headerlink" title="gitlab 启用https:"></a>gitlab 启用https:</h1><pre><code>vim /etc/gitlab/gitlab.rb
+    external_url &quot;https://git.xxxx.com&quot;
+    nginx[&apos;redirect_http_to_https&apos;]=true
+    nginx[&apos;ssl_certificate&apos;]=&quot;/var/xxxx.crt&quot;
+    nginx[&apos;ssl_certificate_key&apos;]=&quot;/var/xxxx.key&quot;
+gitlab-ctl reconfigure</code></pre><h1 id="gitlab-ctl-reconfigure-假死，解决方法："><a href="#gitlab-ctl-reconfigure-假死，解决方法：" class="headerlink" title="gitlab-ctl reconfigure 假死，解决方法："></a>gitlab-ctl reconfigure 假死，解决方法：</h1><pre><code>ctrl + C
+systemctl restart gitlab-runsvdir
+gitlab-ctl reconfigure
+参考--https://gitlab.com/gitlab-org/omnibus-gitlab/issues/160</code></pre><h1 id="启动后502错误："><a href="#启动后502错误：" class="headerlink" title="启动后502错误："></a>启动后502错误：</h1><pre><code>配置中 nginx 和 unicorn 的端口冲突导致(nginx默认为80，unicorn默认为8080)
+1、权限问题:chmod -R 755 /var/log/gitlab
+2、Gitlab的默认启动端口是80,8080
+   external_url &apos;http://localhost:8888&apos; #指定访问端口，默认是80
+   unicorn[&apos;listen&apos;] = &apos;127.0.0.1&apos;
+   unicorn[&apos;port&apos;] = 8001    # 为unicorn worker的工作端口，默认为8080，如果你的8080端口被占用的，这一项需要更改。
+3、内存不足的问题
+   安装gitlab的时候，已经说明你的空余内存需要有4G左右的内存，所以在安装gitlab的时候，请给足内存，在安装。
+注：参考 http://www.mamicode.com/info-detail-2317465.html</code></pre><h1 id="恢复："><a href="#恢复：" class="headerlink" title="恢复："></a>恢复：</h1><pre><code>gitlab-ctl stop unicorn
+gitlab-ctl stop sidekiq
+
+gitlab-rake gitlab:backup:restore BACKUP=1538267907_2018_09_30
+注意：gitlab_rails[&apos;backup_path&apos;]下有 1538267907_2018_09_30_gitlab_backup.tar 文件。
+     恢复后记得删除 git_data_dirs 下的的 repositories.old.xxxx目录，恢复一次就生成一次以前的备份，空间很大</code></pre><h1 id="无提示恢复-无效果-："><a href="#无提示恢复-无效果-：" class="headerlink" title="无提示恢复(无效果)："></a>无提示恢复(无效果)：</h1><pre><code>gitlab-rake gitlab:backup:restore BACKUP=1538267907_2018_09_30 -s</code></pre><h1 id="恢复备份时的权限错误："><a href="#恢复备份时的权限错误：" class="headerlink" title="恢复备份时的权限错误："></a>恢复备份时的权限错误：</h1><pre><code>可以用:gitlab-rake gitlab:check检查
+A.一般是配置gitlab_rails[&apos;backup_path&apos;] = &quot;/data1/backups&quot;(/var/opt/gitlab/backups 为默认值)，此处的目录中的第一级目录必须修改权限为git用户(chown -R git /data1/)
+B.仓库的目录也必须是git用户的,查看配置中的git_data_dirs值:
+chown -R git:git /data1/gitlab-data/repositories</code></pre><h1 id="恢复时备份文件不存在错误："><a href="#恢复时备份文件不存在错误：" class="headerlink" title="恢复时备份文件不存在错误："></a>恢复时备份文件不存在错误：</h1><pre><code>备份文件名中除了后半部分 _gitlab_backup.tar 其他的全是输入的时间戳
+-rwx------ 1 git root 9108725760 Oct  8 15:49 1538267907_2018_09_30_gitlab_backup.tar
+[root@ima_sengled source]# gitlab-rake gitlab:backup:restore BACKUP=1538267907_2018_09_30
+...</code></pre><h1 id="重装清理操作"><a href="#重装清理操作" class="headerlink" title="重装清理操作"></a>重装清理操作</h1><pre><code>gitlab-ctl stop
+gitlab-ctl uninstall
+yum erase gitlab-ce
+ps -ef|grep gitlab-ctl|awk &apos;{print $2}&apos;|kill -9
+find / -name gitlab    ----&gt;  清除缓存和临时文件
+/etc/gitlab/gitlab.rp 的 git_data_dirs 下清空
+rm -rf /etc/gitlab/gitlab.rb</code></pre><h1 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h1><pre><code>恢复后，用户和组全部恢复到备份中的内容。
+恢复后，无法恢复用户的图像信息。
+
+
+
+
+~完~</code></pre>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/gitlab/" rel="tag"># gitlab</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/14/gitlab-backup/" rel="prev" title="gitlab备份与恢复">
+                gitlab备份与恢复 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Zhangyh</p>
+              <p class="site-description motion-element" itemprop="description">Zhangyh's Blog</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#rpm指定版本包下载："><span class="nav-number">1.</span> <span class="nav-text">rpm指定版本包下载：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#rpm版本包下载："><span class="nav-number">2.</span> <span class="nav-text">rpm版本包下载：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#rpm包安装："><span class="nav-number">3.</span> <span class="nav-text">rpm包安装：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#rpm包卸载："><span class="nav-number">4.</span> <span class="nav-text">rpm包卸载：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#gitlab重要参数："><span class="nav-number">5.</span> <span class="nav-text">gitlab重要参数：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#gitlab版本升级："><span class="nav-number">6.</span> <span class="nav-text">gitlab版本升级：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#gitlab汉化："><span class="nav-number">7.</span> <span class="nav-text">gitlab汉化：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#gitlab-启用https"><span class="nav-number">8.</span> <span class="nav-text">gitlab 启用https:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#gitlab-ctl-reconfigure-假死，解决方法："><span class="nav-number">9.</span> <span class="nav-text">gitlab-ctl reconfigure 假死，解决方法：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#启动后502错误："><span class="nav-number">10.</span> <span class="nav-text">启动后502错误：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#恢复："><span class="nav-number">11.</span> <span class="nav-text">恢复：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#无提示恢复-无效果-："><span class="nav-number">12.</span> <span class="nav-text">无提示恢复(无效果)：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#恢复备份时的权限错误："><span class="nav-number">13.</span> <span class="nav-text">恢复备份时的权限错误：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#恢复时备份文件不存在错误："><span class="nav-number">14.</span> <span class="nav-text">恢复时备份文件不存在错误：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#重装清理操作"><span class="nav-number">15.</span> <span class="nav-text">重装清理操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意："><span class="nav-number">16.</span> <span class="nav-text">注意：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zhangyh</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
