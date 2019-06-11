@@ -1,2 +1,0 @@
-# hexo-source
-hexo-source
