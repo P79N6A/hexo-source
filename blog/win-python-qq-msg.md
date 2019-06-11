@@ -1,14 +1,12 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2019-04-11
+---
+layout: posts
+date: 2019-04-11 00:38:36
 title: windown下python发送QQ消息
-tags: python,qq,windows
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: python
-status: publish
-summary: python QQ消息 windows
--->
+categories: python
+tags: 
+- python
+comments: true
+---
 
 #### 说明
     在window x64下python3.7.3 给已登录的QQ指定好友发送指定的消息,再结合flask转化为http模式,测试成功

@@ -1,15 +1,12 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-12-27
+---
+layout: posts
+date: 2018-12-27 00:38:36
 title: linux扩swap
-tags: linux,swap
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: linux
-status: publish
-summary: linux扩swap
--->
-
+categories: linux
+tags: 
+- linux
+comments: true
+---
 
 ### linux扩充swap
     linux扩充swap 1GB

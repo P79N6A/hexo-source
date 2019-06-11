@@ -1,14 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-11-30
-title: ec2挂载s3fs
-tags: ec2,s3fs
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: ec2
-status: publish
-summary: EC2使用S3FS
--->
+---
+layout: posts
+date: 2018-11-30 00:38:36
+title: ec2挂载s3fs 
+categories: python
+tags: 
+- aws
+- python
+comments: true
+---
 
 # 官网：
     https://github.com/s3fs-fuse/s3fs-fuse

@@ -1,14 +1,12 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2019-04-11
+---
+layout: posts
+date: 2019-04-11 00:38:36
 title: python syntax
-tags: python,syntax
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: python syntax
-status: publish
-summary: python syntax
--->
+categories: python
+tags: 
+- python
+comments: true
+---
 
 
 #### 1.getattr,setattr,hasattr语法

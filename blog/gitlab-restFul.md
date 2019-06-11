@@ -1,15 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-12-04
-title: gitlab的restFul Api
-tags: python,gitlab
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: gitlab
-status: publish
-summary: python api操作gitlab
--->
-
+---
+layout: posts
+date: 2018-12-04 00:38:36
+title: gitlab的restFul Api 
+categories: python
+tags: 
+- gitlab
+- python
+comments: true
+---
 
 ### gitlab官方文档
     pip install python-gitlab

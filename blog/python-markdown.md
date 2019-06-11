@@ -1,15 +1,12 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2019-04-17
+---
+layout: posts
+date: 2019-04-17 00:38:36
 title: python-markdown
-tags: python,markdown
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: python markdown
-status: publish
-summary: python-markdown使用
--->
-
+categories: python
+tags: 
+- python
+comments: true
+---
 
 #### install
     pip install markdown

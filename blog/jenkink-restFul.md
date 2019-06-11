@@ -1,14 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-12-04
-title: jenkins的restFul Api
-tags: python,jenkins
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: jenkins
-status: publish
-summary: python api操作jenkins
--->
+---
+layout: posts
+date: 2018-12-04 00:38:36
+title: Istio服务网格
+categories: Istio
+tags: 
+- Istio
+- k8s
+comments: true
+---
 
 
 #### 安装

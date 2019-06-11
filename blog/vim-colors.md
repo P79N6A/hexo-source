@@ -1,15 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-12-18
+---
+layout: posts
+date: 2018-12-18 00:38:36
 title: 树莓派3b+_vim颜色主题
-tags: vim,3b+
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: 3b+ vim
-status: publish
-summary: 树莓派3b+ 修改vim主题
--->
-
+categories: linux
+tags: 
+- linux
+- 树莓派
+comments: true
+---
 
 
 ### vim主题颜色设置

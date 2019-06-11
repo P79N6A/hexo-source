@@ -1,14 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-12-06
+---
+layout: posts
+date: 2018-12-06 00:38:36
 title: shell免秘钥操作github
-tags: shell,github
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: github
-status: publish
-summary: shell免秘钥操作github
--->
+categories: linux
+tags: 
+- linux
+- github
+comments: true
+---
 
 #### 生成密钥对：
      ssh-keygen

@@ -1,14 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2019-05-28
+---
+layout: posts
+date: 2019-05-28 00:38:36
 title: consul-API操作总结
-tags: consul-API python
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: consul
-status: publish
-summary: consul-API操作总结
--->
+categories: python
+tags: 
+- python
+- consul
+comments: true
+---
 
 
 

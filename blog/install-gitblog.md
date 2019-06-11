@@ -1,14 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-11-30
-title: 树莓派3b+_gitblog
-tags: gitblog,3b+
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: 3b+
-status: publish
-summary: gitblog 树莓派3b+安装
--->
+---
+layout: posts
+date: 2018-11-30 00:38:36
+title: 树莓派3b+_gitblog 
+categories: gitlab
+tags: 
+- gitlab
+- 树莓派
+comments: true
+---
 
 #### 软硬件配置：
     硬件：树莓派3B+

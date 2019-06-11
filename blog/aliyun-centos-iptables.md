@@ -1,15 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-12-06
+---
+layout: posts
+date: 2018-12-06 00:38:36
 title: aliyun的centos下的iptables防探测
-tags: aliyun,centos,iptables,防探测
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: linux
-status: publish
-summary: centos的iptabels防探测
--->
-
+categories: linux
+tags: 
+- linux
+- iptables
+comments: true
+---
 
 
 

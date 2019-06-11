@@ -1,14 +1,14 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-12-26
+---
+layout: posts
+date: 2018-12-26 00:38:36
 title: 个人网盘-seafile的搭建与使用
-tags: seafile,3b+,树莓派,linux
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: 3b+ 树莓派 linux
-status: publish
-summary: 个人网盘-seafile的搭建与使用
--->
+categories: linux
+tags: 
+- linux
+- 树莓派
+comments: true
+---
+
 
 ### seafile个人云盘
     - 社区版免费，开源

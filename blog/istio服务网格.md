@@ -1,15 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2019-06-05
+---
+layout: posts
+date: 2019-06-05 00:38:36
 title: Istio服务网格
-tags: Istio Consul docker k8s
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: Istio consul docker k8s
-status: publish
-summary: Istio服务网格
--->
-
+categories: Istio
+tags: 
+- Istio
+- k8s
+comments: true
+---
 
 
 

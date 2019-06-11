@@ -1,15 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-12-12
+---
+layout: posts
+date: 2018-12-12 00:38:36
 title: 个人网盘kiftd
-tags: 网盘,kiftd
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: linux
-status: publish
-summary: 个人网盘kiftd
--->
-
+categories: linux
+tags: 
+- linux
+- kiftd
+comments: true
+---
 
 
 

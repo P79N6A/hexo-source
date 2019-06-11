@@ -1,14 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2019-01-11
-title: github api
-tags: github,api
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: github api
-status: publish
-summary: github api
--->
+---
+layout: posts
+date: 2019-01-11 00:38:36
+title: github api 
+categories: python
+tags: 
+- github
+- python
+comments: true
+---
 
 
 

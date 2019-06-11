@@ -1,14 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-12-27
+---
+layout: posts
+date: 2018-12-27 00:38:36
 title: python sdk 操作aliyun的ecs
-tags: aliyun,python,ecs
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: linux python aliyun ecs
-status: publish
-summary: python sdk 操作aliyun的ecs
--->
+categories: python
+tags: 
+- python
+- aliyun
+comments: true
+---
 
 
 ### python sdk方式操作aliyun ECS:

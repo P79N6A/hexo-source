@@ -1,16 +1,12 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2019-01-09
+---
+layout: posts
+date: 2019-01-09 00:38:36
 title: python-多线程的使用
-tags: python,threading
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: python threading
-status: publish
-summary: python-多线程的使用
--->
-
-
+categories: python
+tags: 
+- python
+comments: true
+---
 
 
 ### 参考：

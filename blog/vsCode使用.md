@@ -1,14 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2019-05-09
-title: vsCode使用 
-tags: vscode python
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: python vscode
-status: publish
-summary: vsCode使用
--->
+---
+layout: posts
+date: 2019-05-09 00:38:36
+title: vsCode使用
+categories: vscode
+tags: 
+- vscode
+- python
+comments: true
+---
 
 
 #### settings.json:

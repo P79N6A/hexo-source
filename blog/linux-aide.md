@@ -1,15 +1,12 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-12-06
+---
+layout: posts
+date: 2018-12-06 00:38:36
 title: linux下文件监控aide
-tags: linux,aide,文件监控
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: linux
-status: publish
-summary: linux下文件监控aide
--->
-
+categories: linux
+tags: 
+- linux
+comments: true
+---
 
 #### 参考：
      https://www.jianshu.com/p/0e1e85808752

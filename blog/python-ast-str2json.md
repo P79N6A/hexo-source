@@ -1,14 +1,12 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2019-01-21
+---
+layout: posts
+date: 2019-01-21 00:38:36
 title: python的ast模块之literal_eval妙用
-tags: python,ast
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: python
-status: publish
-summary: python的ast模块之literal_eval妙用
--->
+categories: python
+tags: 
+- python
+comments: true
+---
 
 
 

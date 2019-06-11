@@ -1,14 +1,12 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-12-21
+---
+layout: posts
+date: 2018-12-21 00:38:36
 title: python-常见定时器
-tags: python
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: python
-status: publish
-summary: python
--->
+categories: python
+tags: 
+- python
+comments: true
+---
 
 
 

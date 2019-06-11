@@ -1,14 +1,13 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-09-24
-title: gitlab采坑记
-tags: gitlab
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: gitlab
-status: publish
-summary: gitlab采坑记
--->
+---
+layout: posts
+date: 2018-09-24 00:38:36
+title: gitlab采坑记 
+categories: python
+tags: 
+- gitlab
+- python
+comments: true
+---
 
 # rpm指定版本包下载：
     http://mirrors.zju.edu.cn/gitlab-ce/yum/el7/

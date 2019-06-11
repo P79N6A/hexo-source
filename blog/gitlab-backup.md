@@ -1,14 +1,12 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2018-10-14
-title: gitlab的备份与恢复
-tags: gitlab
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: gitlab
-status: publish
-summary: gitlab备份与恢复
--->
+---
+layout: posts
+date: 2018-10-14 00:38:36
+title: gitlab备份与恢复 
+categories: python
+tags: 
+- github
+comments: true
+---
 
 
 

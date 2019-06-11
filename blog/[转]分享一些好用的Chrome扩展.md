@@ -1,16 +1,14 @@
-<!--
-author: hack0072008
-head: http://www.etcunion.com/static/logo1_128x128.jpg
-date: 2019-02-18
+---
+layout: posts
+date: 2019-02-18 00:38:36
 title: 分享一些好用的Chrome扩展
-tags: Chrome扩展
-images: http://www.etcunion.com/static/logo1_128x128.jpg
-category: Chrome
-status: publish
-summary: 分享一些好用的Chrome扩展
--->
-
-
+categories: Chrome
+tags: 
+- Chrome
+- centos
+- iptables
+comments: true
+---
 
 
 
